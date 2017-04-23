@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main"
+    tools:context="com.example.admin.manimate.PM.PM">
+
+
+    <Button
+        android:id="@+id/PMviewproject"
+        android:layout_width="150dp"
+        android:layout_height="110dp"
+        android:layout_weight="0.5"
+        android:layout_marginLeft="27dp"
+        android:layout_marginTop="30dp"
+        android:text="View Project"
+        android:fontFamily="cursive"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:background="#003152"
+        android:textColor="#fdfdfd"/>
+
+    <Button
+        android:id="@+id/PMpostproject"
+        android:layout_width="150dp"
+        android:layout_height="110dp"
+        android:layout_weight="0.5"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/PMviewproject"
+        android:layout_toEndOf="@+id/PMviewproject"
+        android:layout_marginLeft="27dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="30dp"
+        android:background="#003152"
+        android:textColor="#fffefe"
+        android:text="Post Project Status"
+        android:fontFamily="cursive"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        />
+    <Button
+        android:id="@+id/PMclcommunication"
+        android:layout_width="150dp"
+        android:layout_height="110dp"
+        android:layout_below="@+id/PMviewproject"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="27dp"
+        android:background="#003152"
+        android:textColor="#fffefe"
+        android:text="Client Communiction"
+        android:fontFamily="cursive"
+        android:textStyle="bold"
+        android:textSize="19dp"/>
+
+    <Button
+        android:id="@+id/PMassigntask"
+        android:layout_width="150dp"
+        android:layout_height="110dp"
+        android:layout_alignLeft="@+id/PMpostproject"
+        android:layout_alignStart="@+id/PMpostproject"
+        android:layout_alignTop="@+id/PMclcommunication"
+        android:background="#003152"
+        android:textColor="#fffefe"
+        android:text="Assign task"
+        android:fontFamily="cursive"
+        android:textStyle="bold"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/PMleave"
+        android:layout_width="150dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="15dp"
+        android:background="#003152"
+        android:textColor="#fffefe"
+        android:text="Leave"
+        android:fontFamily="cursive"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_below="@+id/PMclcommunication"
+        android:layout_alignLeft="@+id/PMclcommunication"
+        android:layout_alignStart="@+id/PMclcommunication" />
+    <Button
+        android:id="@+id/PMfaq"
+        android:layout_width="150dp"
+        android:layout_height="110dp"
+        android:background="#003152"
+        android:textColor="#fffefe"
+        android:text="FAQ"
+        android:fontFamily="cursive"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_alignBottom="@+id/PMleave"
+        android:layout_alignLeft="@+id/PMassigntask"
+        android:layout_alignStart="@+id/PMassigntask"
+        android:layout_alignTop="@+id/PMleave" />
+
+</RelativeLayout>

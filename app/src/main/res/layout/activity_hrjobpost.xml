@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main"
+    tools:context="com.example.admin.manimate.HR.HRjobpost">
+
+    <EditText
+        android:id="@+id/HRJobtital"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textColor="@color/colorAccent"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        android:hint="Job Title"
+        android:textColorHint="#ffffff"
+        android:layout_marginBottom="92dp"
+        android:layout_above="@+id/HRjobdec"
+        android:layout_alignLeft="@+id/HRjobdec"
+        android:layout_alignStart="@+id/HRjobdec" />
+
+    <EditText
+        android:id="@+id/HRjobdec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Job Description"
+        android:textColor="@color/colorAccent"
+        android:textColorHint="#ffffff"
+        android:gravity="center"
+        android:layout_above="@+id/BTHRjobpost"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="44dp" />
+
+    <EditText
+        android:id="@+id/HRjobAveb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textColor="@color/colorAccent"
+        android:inputType="textPersonName"
+        android:hint="Availability"
+        android:textColorHint="#ffffff"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/HRJobtital"
+        android:layout_alignStart="@+id/HRJobtital" />
+
+    <Button
+        android:id="@+id/BTHRjobpost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="52dp"
+        android:layout_marginRight="52dp"
+        android:text="Share Job"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/HRjobAveb"
+        android:layout_alignEnd="@+id/HRjobAveb"
+        android:layout_marginBottom="105dp"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:background="#19334e"/>
+
+</RelativeLayout>

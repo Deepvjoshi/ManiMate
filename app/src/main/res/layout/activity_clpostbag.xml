@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main"
+    tools:context="com.example.admin.manimate.Client.CLpostbag">
+
+    <EditText
+        android:id="@+id/Clprojectname"
+        android:hint="Project Name"
+        android:gravity="center"
+        android:layout_width="330dp"
+        android:textColor="@color/colorAccent"
+        android:textColorHint="@color/colorAccent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="111dp" />
+    <EditText
+        android:id="@+id/ClBagtitle"
+        android:hint="Bug Title"
+        android:textColor="@color/colorAccent"
+        android:textColorHint="@color/colorAccent"
+        android:gravity="center"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Clprojectname"
+        android:layout_alignLeft="@+id/Clprojectname"
+        android:layout_alignStart="@+id/Clprojectname"
+        android:layout_marginTop="54dp" />
+    <EditText
+        android:id="@+id/ClBagdec"
+        android:hint="Bug Descprition"
+        android:textColor="@color/colorAccent"
+        android:gravity="center"
+        android:textColorHint="@color/colorAccent"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ClBagtitle"
+        android:layout_alignLeft="@+id/ClBagtitle"
+        android:layout_alignStart="@+id/ClBagtitle"
+        android:layout_marginTop="43dp" />
+
+    <Button
+        android:id="@+id/BtBagPost"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ClBagdec"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp"
+        android:text="Post Bug"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:background="#19334e"/>
+
+</RelativeLayout>

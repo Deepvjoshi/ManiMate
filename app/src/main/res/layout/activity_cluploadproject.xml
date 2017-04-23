@@ -1,0 +1,75 @@
+
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="550dp"
+    android:maxHeight="200dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<RelativeLayout
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="550dp"
+    android:background="@drawable/main"
+    tools:context="com.example.admin.manimate.Client.CLuploadproject">
+
+
+
+    <EditText
+        android:id="@+id/ClProjectTitle"
+        android:hint="Project Title"
+        android:textColorHint="@color/colorAccent"
+        android:gravity="center"
+        android:textColor="@color/colorAccent"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp" />
+      <EditText
+          android:id="@+id/CLprojectleg"
+          android:layout_width="330dp"
+          android:layout_height="wrap_content"
+          android:hint="Project Language"
+          android:textColorHint="@color/colorAccent"
+          android:gravity="center"
+          android:textColor="@color/colorAccent"
+          android:layout_below="@+id/ClProjectTitle"
+          android:layout_alignLeft="@+id/ClprojectDec"
+          android:layout_alignStart="@+id/ClprojectDec"
+          android:layout_marginTop="27dp" />
+    <EditText
+        android:id="@+id/ClprojectDec"
+        android:textColorHint="@color/colorAccent"
+        android:layout_width="330dp"
+        android:textColor="@color/colorAccent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:hint="Project Description"
+        android:gravity="center"
+        android:layout_below="@+id/CLprojectleg"
+        android:layout_alignLeft="@+id/CLprojectDure"
+        android:layout_alignStart="@+id/CLprojectDure" />
+    <EditText
+        android:id="@+id/CLprojectDure"
+        android:layout_width="330dp"
+        android:hint="Project Duretion(DD/MM/YY)"
+        android:singleLine="true"
+        android:gravity="center"
+        android:textColor="@color/colorAccent"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/colorAccent"
+        android:layout_below="@+id/ClprojectDec"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="34dp" />
+    <Button
+        android:id="@+id/BtUploadpro"
+        android:layout_width="150dp"
+        android:text="Upload"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:layout_below="@+id/CLprojectDure"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:background="#19334e"/>
+
+     </RelativeLayout>
+</ScrollView>

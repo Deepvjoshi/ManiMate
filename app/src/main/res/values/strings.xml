@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Mani mate</string>
+    <string-array name="dipartment">
+        <item>Project Manager</item>
+        <item>HR Manager</item>
+        <item>Developer</item>
+        <item>Client</item>
+    </string-array>
+    <string name="title_activity_main2">Main2Activity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_navigation_drawer">NavigationDrawer</string>
+    <string name="title_activity_home">Home</string>
+
+    <string name="title_activity_faq">FAQ</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+</resources>

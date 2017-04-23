@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_registration"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:background="@drawable/main"
+    android:orientation="vertical"
+    tools:context="com.example.admin.manimate.Registration">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Sign Up"
+        android:fontFamily="cursive"
+        android:textSize="40sp"
+        android:layout_marginTop="25dp"
+        android:textStyle="bold"
+        />
+
+    <EditText
+        android:id="@+id/fullName"
+        android:hint="Full Name"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:layout_marginLeft="10dp"
+        android:background="@android:color/transparent"
+        android:drawablePadding="8dp"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:textSize="16sp"
+        android:drawableLeft="@drawable/login_img"/>
+
+    <EditText
+        android:id="@+id/userEmailId"
+        android:hint="Email Id"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/transparent"
+        android:drawablePadding="8dp"
+        android:gravity="center_vertical"
+        android:inputType="textEmailAddress"
+        android:layout_marginLeft="10dp"
+        android:padding="10dp"
+        android:textSize="16sp"
+        android:drawableLeft="@drawable/email"/>
+    <TextView
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:hint="Dipartment"
+        android:textSize="16sp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginBottom="5dp"/>
+    <Spinner
+        android:id="@+id/dipartmentSpi"
+        android:layout_width="243dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        >
+
+    </Spinner>
+
+
+    <EditText
+        android:id="@+id/mobileNumber"
+        android:hint="Mobile No"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/transparent"
+        android:drawablePadding="8dp"
+        android:gravity="center_vertical"
+        android:inputType="phone"
+        android:layout_marginLeft="10dp"
+        android:padding="10dp"
+        android:textSize="16sp"
+        android:drawableLeft="@drawable/mobile"/>
+
+    <EditText
+        android:id="@+id/addrs"
+        android:hint="Adddress"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/transparent"
+        android:drawablePadding="8dp"
+        android:gravity="center_vertical"
+        android:inputType="textCapWords"
+        android:layout_marginLeft="10dp"
+        android:padding="10dp"
+        android:textSize="16sp"
+        android:drawableLeft="@drawable/location"/>
+
+
+    <EditText
+        android:id="@+id/password"
+        android:hint="Password"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/transparent"
+        android:drawablePadding="8dp"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        android:padding="10dp"
+        android:textSize="16sp"
+        android:drawableLeft="@drawable/lock"/>
+
+
+
+    <Button
+        android:id="@+id/signUpBtn"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@null"
+        android:layout_gravity="center_horizontal"
+        android:padding="3dp"
+        android:text="signUp"
+        android:textSize="17sp"
+        android:textStyle="bold" />
+
+
+</LinearLayout>

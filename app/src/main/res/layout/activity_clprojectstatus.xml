@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main"
+    tools:context="com.example.admin.manimate.Client.CLprojectstatus">
+
+    <TextView
+
+        android:hint="Project Title"
+        android:textColorHint="@color/colorAccent"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:textColor="#11ffffff"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="122dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/CLPROJECTtitle" />
+    <TextView
+        android:hint="Status"
+        android:gravity="center"
+        android:textColorHint="@color/colorAccent"
+        android:textSize="20dp"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorAccent"
+        android:layout_below="@+id/CLPROJECTtitle"
+        android:layout_alignLeft="@+id/CLPROJECTtitle"
+        android:layout_alignStart="@+id/CLPROJECTtitle"
+        android:layout_marginTop="28dp"
+        android:id="@+id/CLTstatus" />
+    <TextView
+        android:layout_width="350dp"
+        android:layout_height="150dp"
+        android:hint="Discprition"
+        android:textSize="20dp"
+        android:textColorHint="@color/colorAccent"
+        android:gravity="center"
+        android:textColor="@color/colorAccent"
+        android:layout_below="@+id/CLTstatus"
+        android:layout_alignLeft="@+id/CLTstatus"
+        android:layout_alignStart="@+id/CLTstatus"
+        android:layout_marginTop="24dp"
+        android:id="@+id/CLPROJECTdisc" />
+
+
+
+</RelativeLayout>

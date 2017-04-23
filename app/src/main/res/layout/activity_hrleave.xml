@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main"
+    tools:context="com.example.admin.manimate.HR.HRleave">
+
+    <TextView
+        android:text="Subject"
+        android:textColor="@color/colorAccent"
+        android:textSize="20dp"
+        android:layout_width="250dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="61dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="26dp"
+        android:layout_marginStart="26dp"
+        android:id="@+id/tvSubject" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textColor="@color/colorAccent"
+        android:layout_below="@+id/tvSubject"
+        android:layout_alignLeft="@+id/tvSubject"
+        android:layout_alignStart="@+id/tvSubject"
+        android:layout_marginTop="17dp"
+        android:id="@+id/HRleaveSub" />
+    <TextView
+        android:text="Date"
+        android:textColor="@color/colorAccent"
+        android:textSize="20dp"
+        android:layout_width="250dp"
+        android:layout_height="25dp"
+        android:layout_below="@+id/HRleaveSub"
+        android:layout_alignLeft="@+id/HRleaveSub"
+        android:layout_alignStart="@+id/HRleaveSub"
+        android:layout_marginTop="13dp"
+        android:id="@+id/ETdate" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/ETdate"
+        android:textColor="@color/colorAccent"
+        android:layout_alignLeft="@+id/ETdate"
+        android:layout_alignStart="@+id/ETdate"
+        android:layout_marginTop="17dp"
+        android:id="@+id/HRleaveDate" />
+    <TextView
+        android:textSize="20dp"
+        android:layout_width="250dp"
+        android:layout_height="25dp"
+        android:text="Descprition"
+        android:textColor="@color/colorAccent"
+        android:layout_below="@+id/HRleaveDate"
+        android:layout_alignLeft="@+id/HRleaveDate"
+        android:layout_alignStart="@+id/HRleaveDate"
+        android:layout_marginTop="22dp"
+        android:id="@+id/ETdescprition" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_below="@+id/ETdescprition"
+        android:layout_alignLeft="@+id/ETdescprition"
+        android:layout_alignStart="@+id/ETdescprition"
+        android:textColor="@color/colorAccent"
+        android:layout_marginTop="11dp"
+        android:id="@+id/HrleaveDec" />
+    <Button
+        android:id="@+id/BtHRleaveSub"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="41dp"
+        android:layout_below="@+id/HrleaveDec"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:background="#19334e"
+        android:text="Submit"/>
+
+
+</RelativeLayout>

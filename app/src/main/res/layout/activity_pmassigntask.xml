@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main"
+    tools:context="com.example.admin.manimate.PM.PMAssigntask">
+
+
+
+    <EditText
+        android:id="@+id/TaskProjectTitle"
+        android:hint="Project Title"
+        android:textColorHint="@color/colorAccent"
+        android:gravity="center"
+        android:textColor="@color/colorAccent"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="87dp" />
+    <EditText
+        android:id="@+id/Tasktsk"
+        android:textColorHint="@color/colorAccent"
+        android:layout_width="330dp"
+        android:textColor="@color/colorAccent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TaskProjectTitle"
+        android:layout_alignLeft="@+id/TaskProjectTitle"
+        android:layout_alignStart="@+id/TaskProjectTitle"
+        android:layout_marginTop="44dp"
+        android:hint="Task "
+        android:gravity="center"/>
+    <EditText
+        android:id="@+id/tskDis"
+        android:layout_width="330dp"
+        android:hint="Task Discription"
+        android:gravity="center"
+        android:textColor="@color/colorAccent"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/colorAccent"
+        android:layout_below="@+id/Tasktsk"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="34dp" />
+    <Button
+        android:id="@+id/BtUploatask"
+        android:layout_width="150dp"
+        android:text="Assign Task"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:layout_below="@+id/tskDis"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:background="#19334e"/>
+
+</RelativeLayout>

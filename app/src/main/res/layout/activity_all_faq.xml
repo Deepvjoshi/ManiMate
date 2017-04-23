@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main"
+    tools:context="com.example.admin.manimate.AllFaq">
+
+    <TextView
+        android:id="@+id/TVque1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:paddingTop="10dp"
+        android:layout_marginLeft="30dp"
+        android:text="1) Problem detected?" />
+    <TextView
+        android:id="@+id/TVque2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:paddingTop="10dp"
+        android:text="2)how do i fix problem to upload project?"
+        android:layout_below="@+id/TVque1"
+        android:layout_alignLeft="@+id/TVque1"
+        android:layout_alignStart="@+id/TVque1"
+        android:layout_marginTop="27dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+    <TextView
+        android:id="@+id/TVque3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3) How do i reinstall Mani Mate?"
+        android:textSize="20dp"
+        android:layout_marginTop="27dp"
+        android:layout_below="@+id/TVque2"
+        android:layout_alignLeft="@+id/TVque2"
+        android:layout_alignStart="@+id/TVque2"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+    <TextView
+        android:id="@+id/TVque4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="4)how i deleat my account?"
+        android:layout_below="@+id/TVque3"
+        android:layout_alignLeft="@+id/TVque3"
+        android:layout_alignStart="@+id/TVque3"
+        android:layout_marginTop="27dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+    <TextView
+        android:id="@+id/TVque5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="5)Which android device is suppote many mate?"
+        android:layout_below="@+id/TVque4"
+        android:layout_alignLeft="@+id/TVque4"
+        android:layout_alignStart="@+id/TVque4"
+        android:layout_marginTop="27dp" />
+    <TextView
+        android:id="@+id/TVque6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="6)Why i can't connect?"
+        android:layout_below="@+id/TVque5"
+        android:layout_alignLeft="@+id/TVque5"
+        android:layout_alignStart="@+id/TVque5"
+        android:layout_marginTop="27dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+    <EditText
+        android:id="@+id/ETother"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TVque6"
+        android:layout_marginTop="60dp"
+        android:hint="Other Problem"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignLeft="@+id/TVque6"
+        android:layout_alignStart="@+id/TVque6" />
+    <Button
+        android:id="@+id/BTFaq"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ETother"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="23dp"
+        android:text="Submit"
+        android:background="#014f83"/>
+
+
+
+</RelativeLayout>

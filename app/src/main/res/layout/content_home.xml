@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.admin.manimate.Home"
+    tools:showIn="@layout/app_bar_home">
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="110dp"
+        android:background="#003152"
+        android:text="CLIENT"
+        android:fontFamily="cursive"
+        android:textSize="35dp"
+        android:textColor="#ffffff"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="36dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="104dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/btClient" />
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="110dp"
+        android:background="#003152"
+        android:text="Developer"
+        android:fontFamily="cursive"
+        android:textSize="28dp"
+        android:textColor="#ffffff"
+        android:layout_alignTop="@+id/btClient"
+        android:layout_toRightOf="@+id/btClient"
+        android:layout_marginLeft="18dp"
+        android:layout_marginStart="18dp"
+        android:id="@+id/btDevlopar" />
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="110dp"
+        android:background="#003152"
+        android:text="Project Manager"
+        android:fontFamily="cursive"
+        android:textSize="30dp"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/btClient"
+        android:layout_alignLeft="@+id/btClient"
+        android:layout_alignStart="@+id/btClient"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="23dp"
+        android:id="@+id/btProjectmanager" />
+    <Button
+        android:id="@+id/btHr"
+        android:layout_width="150dp"
+        android:layout_height="110dp"
+        android:background="#003152"
+        android:text="Hr"
+        android:fontFamily="cursive"
+        android:textSize="30dp"
+        android:textColor="#ffffff"
+        android:layout_alignTop="@+id/btProjectmanager"
+        android:layout_alignLeft="@+id/btDevlopar"
+        android:layout_alignStart="@+id/btDevlopar" />
+
+
+
+
+</RelativeLayout>

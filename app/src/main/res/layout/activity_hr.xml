@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main"
+    tools:context="com.example.admin.manimate.HR.HR">
+
+
+    <Button
+        android:id="@+id/HRtimeshee"
+        android:layout_width="150dp"
+        android:layout_height="110dp"
+        android:layout_weight="0.5"
+        android:layout_marginLeft="27dp"
+        android:layout_marginTop="30dp"
+        android:text="Time Sheet"
+        android:fontFamily="cursive"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:background="#003152"
+        android:textColor="#fdfdfd"/>
+
+    <Button
+        android:id="@+id/HRsharejobpost"
+        android:layout_width="150dp"
+        android:layout_height="110dp"
+        android:layout_weight="0.5"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/HRtimeshee"
+        android:layout_toEndOf="@+id/HRtimeshee"
+        android:layout_marginLeft="27dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="30dp"
+        android:background="#003152"
+        android:textColor="#fffefe"
+        android:text="Share Job Post"
+        android:fontFamily="cursive"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        />
+    <Button
+        android:id="@+id/HRViewjobpost"
+        android:layout_width="150dp"
+        android:layout_height="110dp"
+        android:layout_below="@+id/HRtimeshee"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="27dp"
+        android:background="#003152"
+        android:textColor="#fffefe"
+        android:text="View Job Post"
+        android:fontFamily="cursive"
+        android:textStyle="bold"
+        android:textSize="20dp"/>
+
+    <Button
+        android:id="@+id/HRviewleave"
+        android:layout_width="150dp"
+        android:layout_height="110dp"
+        android:layout_alignLeft="@+id/HRsharejobpost"
+        android:layout_alignStart="@+id/HRsharejobpost"
+        android:layout_alignTop="@+id/HRViewjobpost"
+        android:background="#003152"
+        android:textColor="#fffefe"
+        android:text="View Leave"
+        android:fontFamily="cursive"
+        android:textStyle="bold"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/HRpayrole"
+        android:layout_width="150dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="15dp"
+        android:background="#003152"
+        android:textColor="#fffefe"
+        android:text="Payrole"
+        android:fontFamily="cursive"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_below="@+id/HRViewjobpost"
+        android:layout_alignLeft="@+id/HRViewjobpost"
+        android:layout_alignStart="@+id/HRViewjobpost" />
+    <Button
+        android:id="@+id/HRfaq"
+        android:layout_width="150dp"
+        android:layout_height="110dp"
+        android:background="#003152"
+        android:textColor="#fffefe"
+        android:text="FAQ"
+        android:fontFamily="cursive"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_alignBottom="@+id/HRpayrole"
+        android:layout_alignLeft="@+id/HRviewleave"
+        android:layout_alignStart="@+id/HRviewleave"
+        android:layout_alignTop="@+id/HRpayrole" />
+
+</RelativeLayout>

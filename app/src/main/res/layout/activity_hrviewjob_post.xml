@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main"
+    tools:context="com.example.admin.manimate.HR.HRviewjobPost">
+
+
+    <TextView
+        android:hint="Job Title"
+        android:gravity="center"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:textColor="@color/colorAccent"
+        android:layout_marginTop="138dp"
+        android:id="@+id/hrpostjobtital"
+        android:textColorHint="#ffffff"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+    <TextView
+        android:id="@+id/hrpostjobdec"
+        android:hint="Job Decprition"
+        android:textColorHint="#ffffff"
+        android:gravity="center"
+        android:layout_width="300dp"
+        android:textColor="@color/colorAccent"
+        android:layout_height="60dp"
+        android:layout_marginTop="28dp"
+        android:layout_below="@+id/hrpostjobtital"
+        android:layout_alignLeft="@+id/hrpostjobtital"
+        android:layout_alignStart="@+id/hrpostjobtital" />
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:hint="job Avlable"
+        android:id="@+id/hrpostjobavlable"
+        android:textColorHint="#ffffff"
+        android:textColor="@color/colorAccent"
+        android:gravity="center"
+        android:layout_below="@+id/hrpostjobdec"
+        android:layout_alignLeft="@+id/hrpostjobdec"
+        android:layout_alignStart="@+id/hrpostjobdec"
+        android:layout_marginTop="32dp" />
+
+</RelativeLayout>
