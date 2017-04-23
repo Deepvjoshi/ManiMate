@@ -8,6 +8,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.example.admin.manimate.Model.Lv;
 import com.example.admin.manimate.R;
 
 import static com.example.admin.manimate.R.id.PmLeavesubj;
@@ -51,6 +52,15 @@ public class PMLeave extends AppCompatActivity {
                     Toast.makeText(PMLeave.this, "mobile can't be empty", Toast.LENGTH_SHORT).show();
 
 
+                }
+                else {
+                    Toast.makeText(PMLeave.this, "Leave Apply", Toast.LENGTH_SHORT).show();
+
+                    Lv lvm=new Lv();
+                    lvm.setLvsub(PMLeavesub);
+                    lvm.setLvdate(PMLeavedate);
+                    lvm.setLvdis(PMLeavedec);
+                    onBackPressed();
                 }
             }
 

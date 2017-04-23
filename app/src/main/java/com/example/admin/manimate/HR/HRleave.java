@@ -6,14 +6,18 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ListView;
 import android.widget.Toast;
 
+import com.example.admin.manimate.Adptr.Lvado;
+import com.example.admin.manimate.Model.Lv;
 import com.example.admin.manimate.R;
 
-import static com.example.admin.manimate.R.id.HRJobtital;
-import static com.example.admin.manimate.R.id.HRleaveSub;
+import java.util.ArrayList;
+import java.util.List;
 
 public class HRleave extends AppCompatActivity {
+    List<Lv> all=new ArrayList<>();
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         int id=item.getItemId();
@@ -27,35 +31,17 @@ public class HRleave extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_hrleave);
-
+        ListView lw = (ListView) findViewById(R.id.hrlv);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowCustomEnabled(true);
 
-        final EditText ed1=(EditText)findViewById(HRleaveSub);
-        final EditText ed2=(EditText)findViewById(R.id.HRleaveDate);
-        final EditText ed3=(EditText)findViewById(R.id.HrleaveDec);
-        Button button=(Button)findViewById(R.id.BtHRleaveSub) ;
 
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                String HRleavesub = ed1.getText().toString();
-                String HRleavedate = ed2.getText().toString();
-                String HRleavedec = ed3.getText().toString();
-
-                if (HRleavesub.isEmpty()) {
-                    Toast.makeText(HRleave.this, "UserName can't be empty", Toast.LENGTH_SHORT).show();
-                } else if (HRleavedate.isEmpty()) {
-                    Toast.makeText(HRleave.this, "Emailid can't be empty", Toast.LENGTH_SHORT).show();
-
-                } else if (HRleavedec.isEmpty()) {
-                    Toast.makeText(HRleave.this, "mobile can't be empty", Toast.LENGTH_SHORT).show();
+        Lv l = new Lv();
+        all.add(l);
+        Lvado lc = new Lvado(HRleave.this, all);
+        lw.setAdapter(lc);
 
 
-                }
-            }
-
-
-        });
     }
-}
+    }
+
